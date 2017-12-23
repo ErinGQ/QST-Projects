@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+		}
+		.wrap{
+			position:relative;
+			width:300px;
+			margin:100px auto;
+		}
+		.border{
+			width:300px;
+			height:300px;
+			border:20px solid #1AD280;
+			border-radius:50%;
+			border-top-color:#ECAB18;
+			border-left-color:#ECAB18;
+			transition:all 2s;
+
+		}
+		.wrap:hover .border{
+			transform:rotateZ(180deg);
+
+		}
+		.wrap img{
+			position:absolute;
+			left:20px;
+			top:20px;
+			width:300px;
+			border-radius:50%;
+			transition:all 2s;
+
+		}
+		.wrap:hover img{
+			transform:rotateY(180deg);
+		}
+		.wrap .txt{
+			position:absolute;
+			left:20px;
+			top:20px;
+			width:300px;
+			height:300px;
+			text-align:center;
+			color:#fff;
+			border-radius:50%;
+			background:rgba(0,0,0,.5);
+			opacity:0;
+			transition:all 2s;
+		}
+		.wrap .txt h1{
+			width:260px;
+			margin:40px 0 30px 20px;
+			padding-bottom:20px;
+			font-size:40px;			
+			font-weight:700;
+			border-bottom:1px solid #fff;
+		}
+		.wrap:hover .txt p{
+			animation:txt 1.5s;
+		}
+		.wrap:hover .txt{
+			opacity:1;
+		}
+		@keyframes txt{
+				0%{
+					transform: translate(200px,-200px) rotateZ(180deg);
+				}
+				100%{
+					transform: translate(0,0) rotateZ(0);
+				}
+
+			}
+
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="border"></div>
+		<img src="pic.jpg">
+		<div class="txt">
+			<h1>校训</h1>
+			<p>好好学习，天天向上</p>
+		</div>
+		
+	</div>
+</body>
+</html>

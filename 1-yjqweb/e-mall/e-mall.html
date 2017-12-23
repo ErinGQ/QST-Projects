@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网上商城</title>
+	<link rel="stylesheet" type="text/css" href="css/netmall.css">
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="images/logo.gif" alt="">
+			<ul>
+				<li><a href="#">首页&nbsp;|&nbsp;</a></li>
+				<li><a href="#">商品展示页&nbsp;|&nbsp;</a></li>
+				<li><a href="#">购物车&nbsp;|&nbsp;</a></li>
+				<li><a href="#">登录</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<div class="register">
+				<ul>
+					<li><span>填写注册信息</span></li>
+					<li class="li1"><span>2.邮箱验证</span></li>
+					<li class="li2"><span>3.完成注册</span></li<>
+				</ul>
+			</div>
+			<div class="mid">
+				<div class="lf">
+					<img src="images/register_pic_01.gif">
+				</div>
+				<div class="rig">
+					<img src="images/p1.png">
+				</div>
+			</div>
+			
+			<table width="600px" border="0" align="center" cellspacing="0">
+				<tr>
+	    			<td width="150"> <div align="left">Email地址：</div></td>
+	    			<td width="256">
+	       			<input class="input1" maxlength="10" name="email" value ="test2@qq.com">
+	      			</td>
+	     		</tr>
+				 <tr>
+				    <td width="150"> <div align="left">设置昵称：</div></td>
+				     <td width="256">
+				       <input class="input1" maxlength="10" name="name">
+				       <span>昵称不能为空<span>
+				      </td>
+      			</tr>
+      			<tr>
+				    <td width="150"> <div align="left">设定密码：</div></td>
+				     <td width="256">
+				       <input class="input1" maxlength="10" name="password">
+				       <span>密码不能为空<span>
+				      </td>
+      			</tr>
+      			<tr>
+				    <td width="150"> <div align="left">再输入一次密码：</div></td>
+				     <td width="256">
+				       <input class="input1" maxlength="10" name="password">
+				       <span>确认密码不能为空<span>
+				      </td>
+      			</tr>
+      			<tr>
+				    <td width="150"> <div align="left">性别：</div></td>
+				     <td width="256">
+				       男<input type="radio" value="0" name="sex">&nbsp;
+						女<input type="radio" value="1" name="sex">
+				      </td>
+      			</tr>
+      			<tr>
+				    <td width="150"> <div align="left">爱好：</div></td>
+				     <td width="256">
+				       <input type="checkbox" value="0">玩游戏&nbsp;
+						<input type="checkbox" value="1">看书&nbsp;
+						<input type="checkbox" value="2">运动
+				      </td>
+      			</tr>
+      			<tr>
+				    <td width="150"> <div align="left">所在地区：</div></td>
+				     <td width="256">
+				       	<select name="select" class="input">   
+		                    <option>江苏</option>
+		                    <option>湖北</option>
+		                    <option selected>请选择省/城市</option>
+                  		</select>
+                  		<select name="select" class="input"> 
+		                    <option>如皋</option>
+		                    <option>盐城</option>
+		                    <option selected>请选择城市/地区</option>
+                 		 </select>
+				      </td>
+      			</tr>
+      			 <tr>
+				    <td width="150"> <div align="left">注册须知：</div></td>
+				     <td width="256">
+				    <form action="index.aspx" method="get">
+				    <textarea name="know" cols="40" rows="8"></textarea>
+				    <br>
+				    </form>
+				     </td>
+			     </tr> 
+			     <tr>
+				    <td width="150"> <div align="left">同意以上协议：</div></td>
+				     <td width="256">
+				       &nbsp;<input type="checkbox" value="0">
+				      </td>
+      			</tr>      
+			</table>
+			<div class="hand">
+				<a href="#"><img src="images/register_btn_out.gif"></a>
+			</div>
+
+		</div>
+	</div>
+	<footer>
+		<span>Copyright  商城 2014-2015，All Rights Reserved </span>
+		<img src="images/validate.gif">
+	</footer>
+</body>
+</html>

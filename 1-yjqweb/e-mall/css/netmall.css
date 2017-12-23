@@ -1,0 +1,146 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+}
+.container{
+ 	width: 802px;
+	margin: 0 auto;
+}
+.container .logo{
+	width: 802px;
+	height: 50px;
+	background: #fcf8df;
+	border:1px solid #a3a3a3;
+}
+.container .logo img{
+	margin:10px 0 0 44px;
+}
+.container .logo ul{
+	float: right;
+	width: 220px;
+	height: 30px;
+	margin:24px 0 0 0;
+	/*border: 1px solid #000;*/
+}
+.container .logo ul li{
+	float: left;
+}
+.container .logo ul li a{
+	font-size:12px; 
+	color:#1965b3;
+}
+/*.container .logo ul li img{
+	width: 2px;
+	height: 4px;
+}*/
+.main{
+	width: 800px;
+	height: 540px;
+	border:2px solid #a3a3a3;
+}
+/*.main .register{
+	float: left;
+	width: 800px;
+	height: 40px;
+}*/
+.main .register ul{
+	float: left;
+	width: 800px;
+	height: 40px;
+	
+}
+/*.main .register ul li {
+	width: 264px;
+	height: 40px;
+}*/
+.main .register ul li {
+	float: left;
+	width: 266px;
+	height: 40px;
+	margin: 0 auto;
+	display:line-block;
+	/*border: 1px solid #000;*/
+	background: url("../images/register_tag_left.gif") no-repeat;
+	background-position: -46px 0px;
+}
+.main .register ul .li1{
+	float: left;
+	background: url("../images/register_tag_mid.gif") no-repeat;
+	background-position: -50px 0px;
+} 
+.main .register ul .li2{
+	float: left;
+	margin: 0 auto;
+	background: url("../images/register_tag_right.gif") no-repeat;
+} 
+.main .register ul span{
+	font-size: 18px;
+	/*color: pink;*/
+	text-align: center;
+	margin: 4px 0 0 50px;
+
+}
+/*.main .register ul li img{
+	width: 266px;
+	height: 40px;
+}*/
+/*.main .register ul li span{
+	float: left;
+}*/
+.mid{
+	float:left;
+	width:802px ;
+	height: 100px;
+	border-bottom: 1px dashed #cccccc;
+}
+.mid .lf{
+	width:186px; 
+	height:100px;
+	float:left;
+	/*border:2px solid pink;*/
+
+}
+.lf img{
+	float: right;
+	margin:44px 0 0 124px;
+}
+.rig img{
+	float: left;
+	margin:40px 0 0 10px;
+}
+table{
+	margin:0 auto;
+
+}
+table tr td div{
+	font-size: 16px;
+}
+table span{
+	font-size: 12px;
+	color:#ff0000;
+}
+
+.hand{
+	width: 800px;
+	height: 50px;
+	text-align: center;
+	margin: 10px 0 0 0;
+}
+footer{
+	width:800px; 
+	height:60px;
+	margin:0 auto;
+}
+footer span{
+	font-size: 12px;
+	line-height: 60px;
+	margin:0 0 0 250px;
+	text-align: center;
+	color: #000;
+}
+footer img{
+	margin: 0 0 -16px 0;
+}
