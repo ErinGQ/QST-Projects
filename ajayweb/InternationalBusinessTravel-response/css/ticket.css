@@ -1,0 +1,493 @@
+/*banner标题*/
+#headline {
+	max-width: 1920px;
+	padding: 70px 0 0 0;
+	margin: 0 auto;
+	position: relative;
+}
+#headline hgroup {
+	position: absolute;
+	top: 45%;
+	left: 18%;	
+}
+#headline h2 {
+	font-size: 45px;
+	letter-spacing: 1px;
+}
+#headline h3 {
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+
+
+/*内容部分*/
+#container {
+	max-width: 1260px;
+	margin: 30px auto;
+}
+#container .sidebar {
+	width: 28%;
+	float: right;
+}
+#container .sidebar h2{
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: white;
+	text-indent: 10px;
+	background-color:deepskyblue;
+	text-align: left;
+}
+#container .recommend {
+	margin: 0 0 10px;
+	background-color: #fff;
+}
+#container .tag {
+	text-align: center;
+	padding: 10px 0;
+}
+#container .tag li {
+	display: inline-block;
+	background-color: #eee;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-indent: 8px;
+	text-align: left;
+	margin:2px 0;
+}
+#container .tag a{
+	display: block;
+	color: #999;
+}
+#container .tag a:hover {
+	color: #fff;
+	background-color:#000;
+}
+#container .hot {
+	border: 1px solid #eee;
+	margin: 0 0 10px;
+	text-align: center;
+	background-color: #fff;
+}
+#container .figure {
+	padding: 10px 0;
+}
+#container .hot figure {
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	color: white;
+	padding: 4px;
+	overflow: hidden;
+}
+#container .hot figure figcaption{
+	position: absolute;
+	left:4px;
+	bottom:-22px;
+	width:95%;
+	background: rgba(0,0,0,0.5);
+}
+
+#container .treasure {
+	border: 1px solid #eee;
+	margin: 0 0 10px;
+	background-color: #fff;
+}
+#container .box {
+	text-align: center;
+	padding: 10px 0;
+}
+#container .box a{
+	display: inline-block;
+	background-color: #eee;
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+	text-indent: 35px;
+	text-align: left;
+	margin:3px 0;
+	color: #999;
+}
+#container .box a.trea1 {
+	background: #eee url(../img/trea1.png) no-repeat 10px center;
+}
+#container .box a.trea2 {
+	background: #eee url(../img/trea2.png) no-repeat 10px center;
+}
+#container .box a.trea3 {
+	background: #eee url(../img/trea3.png) no-repeat 10px center;
+}
+#container .box a.trea4 {
+	background: #eee url(../img/trea4.png) no-repeat 10px center;
+}
+
+
+
+.list {
+	width: 71%;
+	float: left;
+}
+.list h2 {
+	height: 40px;
+	line-height: 40px;
+	font-size: 30px;
+	font-weight: normal;
+	border-bottom: 1px dashed #999;
+	padding: 0 0 15px 0;
+	color: #666;
+}
+
+.ticket {
+	color: #666;
+}
+.ticket .type {
+	font-size: 20px;
+	margin: 20px 0 10px 0;
+	border: none;
+}
+.ticket .type mark {
+	color: #fff;
+	background-color:orange;
+	padding: 5px 8px;
+	border-radius: 4px;
+	margin: 0 10px 0 16px;
+}
+.ticket .form {
+	font-size: 20px;
+	border: none;
+}
+.ticket .form p {
+	line-height: 3;
+}
+.ticket .form input {
+	width: 250px;
+	height: 30px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 5px;
+	font-size: 18px;
+	color: #666;
+	margin: 0 0 0 16px;
+}
+.ticket .left {
+	width: 43%;
+	display: inline-block;
+}
+.ticket .right {
+	width: 43%;
+	display: inline-block;
+}
+.ticket .button {
+	width: 9%;
+	display: inline-block;
+}
+.ticket .submit {
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	background-color:lightskyblue;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	position: relative;
+	top: -28px;
+}
+.ticket .new {
+	margin: 20px 0 0 0;
+	font-size: 20px;
+}
+.ticket .new ul {
+	margin: 20px 0 0 0;
+}
+.ticket .new li {
+	display: inline-block;
+	padding: 5px 10px;
+}
+.ticket .new li:first-child {
+	padding-left: 0;
+}
+.ticket .new li:nth-child(2) {
+	background-color:orange;
+	border-radius: 4px;
+	color: #fff;
+}
+.ticket table {
+	width: 100%;
+    border-collapse:collapse;
+    margin: 20px 0 0 0;
+    border: 1px solid #ddd;
+}
+.ticket table th {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ddd;
+	font-weight: normal;
+}
+.ticket table td {
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+.ticket table tr:nth-child(2n) {
+	background-color: #fafafa;
+}
+.ticket table tr:hover {
+	background-color: #eee;
+}
+.ticket .price {
+	color: #59b200;
+}
+
+.ticket .reserve {
+	display: inline-block;
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 4px;
+	background-color: lightskyblue;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+
+.ticket .more2 {
+	text-align: center;
+	font-size: 18px;
+	margin: 0 auto;
+	cursor: pointer;
+	display: block;
+	color: #666;
+	background:lightgray;
+	border-radius: 10px;
+}
+
+
+
+/*媒体查询，参考部分Bootstrap 框架*/
+/*当页面大于1200px 时，大屏幕，主要是PC 端*/
+@media (min-width: 1200px) {
+	
+}
+/*在992 和1199 像素之间的屏幕里，中等屏幕，分辨率低的PC*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 36px;
+	}
+	#headline h3 {
+		font-size: 20px;
+	}
+	.sidebar {
+		display: none;
+	}
+	.list {
+		width: 100%;
+		padding: 0 20px
+	}
+}
+/*在768 和991 像素之间的屏幕里，小屏幕，主要是PAD*/
+@media (min-width: 768px) and (max-width: 991px) {
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 30px;
+	}
+	#headline h3 {
+		font-size: 16px;
+	}
+	.sidebar {
+		display: none;
+	}
+	.list {
+		width: 100%;
+		padding: 0 20px
+	}
+	.list h2 {
+		font-size: 28px;
+	}
+
+	.ticket .left, .ticket .right, .ticket .button {
+		width: 98%;
+		display: block;
+	}
+	.ticket .form input {
+		width: 98%;
+		height: 35px;
+		margin: 0;
+	}
+	.ticket .form p {
+		line-height: 2;
+	}
+	.ticket .submit {
+		display: block;
+		width: 30%;
+		height: auto;
+		line-height: 2;
+		position: static;
+		margin:10px auto;
+	}
+	.md-hidden {
+		display: none;
+	}
+	
+}
+/*在480 和767 像素之间的屏幕里，超小屏幕，主要是手机*/
+@media (min-width: 480px) and (max-width: 767px) {
+	#header, #header .center, #header .link {
+		height: 45px;
+	}
+	#header .logo, .sm-hidden,.sidebar,.md-hidden {
+		display: none;
+	}
+	#header .link {
+		width: 100%;
+		line-height: 45px;
+	}
+	
+	.sm-visible {
+		display: block;
+	}
+	#tour .center h2 {
+		font-size: 30px;
+	}
+	#tour .center p {
+		font-size: 15px;
+	}
+	#tour figure {
+		width: 49.2%;
+	}
+	#headline {
+		padding: 45px 0 0 0;
+	}
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 26px;
+	}
+	#headline h3 {
+		font-size: 14px;
+	}
+	.list {
+		width: 100%;
+		padding: 0 20px
+	}
+	.list h2 {
+		font-size: 25px;
+	}
+	
+	.ticket .left, .ticket .right, .ticket .button {
+		width: 98%;
+		display: block;
+	}
+	.ticket .form input {
+		width: 98%;
+		height: 35px;
+		margin: 0;
+	}
+	.ticket .form p {
+		line-height: 2;
+	}
+	.ticket .submit {
+		display: block;
+		width: 30%;
+		height: auto;
+		line-height: 2;
+		position: static;
+		margin:10px auto;
+	}
+	.ticket .type, .ticket .form, .ticket .new, .ticket .form input, .ticket .submit, .ticket .reserve {
+		font-size: 16px;
+	}
+	
+}
+/*在小于480 像素的屏幕，微小屏幕，更低分辨率的手机*/
+@media (max-width: 479px) {
+	#header, #header .center, #header .link {
+		height: 45px;
+	}
+	#header .logo, .xs-hidden, .sm-hidden, .sidebar, .md-hidden  {
+		display: none;
+	}
+	#header .link {
+		width: 100%;
+		line-height: 45px;
+	}
+	#header .link li {
+		width: 25%;
+	}
+	
+	.sm-visible {
+		display: block;
+	}
+	#footer .bottom, #footer .version {
+		font-size: 13px;
+	}
+	
+	#headline hgroup {
+		left: 8%;
+	}
+	#headline h2 {
+		font-size: 20px;
+	}
+	#headline h3 {
+		font-size: 12px;
+	}
+	#headline {
+		padding: 45px 0 0 0;
+	}
+	.list {
+		width: 100%;
+		padding: 0 20px
+	}
+	.list h2 {
+		font-size: 20px;
+	}
+	
+	.ticket .left, .ticket .right, .ticket .button {
+		width: 98%;
+		display: block;
+	}
+	.ticket .form input {
+		width: 98%;
+		height: 35px;
+		margin: 0;
+	}
+	.ticket .form p {
+		line-height: 2;
+	}
+	.ticket .submit {
+		display: block;
+		width: 30%;
+		height: auto;
+		line-height: 2;
+		position: static;
+		margin:10px auto;
+	}
+	.ticket .type, .ticket .form, .ticket .new, .ticket .form input, .ticket .submit, .ticket .reserve {
+		font-size: 14px;
+	}
+	.ticket .reserve {
+		display: inline-block;
+		width: auto;
+		height: auto;
+		line-height: 1;
+		border-radius: 4px;
+		background-color:lightskyblue;
+		color: #fff;
+		padding: 8px;
+		text-align: center;
+	}
+}

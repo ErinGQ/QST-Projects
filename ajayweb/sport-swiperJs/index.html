@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" href="css/swiper.min.css">
+	<style>
+		html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img{
+    	width:100%;
+    	height: auto;
+    }
+	</style>
+</head>
+<body>
+	<!--dir="rtl"--倒序排列-->
+	<div class="swiper-container" dir="rtl">
+	  	<div class="swiper-wrapper">
+		    <div class="swiper-slide ">
+		    	<!--class="swiper-lazy"---图片懒加载-->
+		    	<img src="img/bg1.jpg" alt="" class="swiper-lazy" />
+		    	<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+		    </div>
+		    <div class="swiper-slide ">
+		    	<img src="img/bg2.jpg" alt="" class="swiper-lazy"/>
+		    	<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+		    </div>
+		    <div class="swiper-slide ">
+		    	<img src="img/bg3.jpg" alt=""  class="swiper-lazy"/>
+		    	<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+		    </div>
+	  	</div>
+	  	<!--分页-->
+	  	<div class="swiper-pagination swiper-pagination-white"></div>
+	  	<!--滚动条-->
+	  	<div class="swiper-scrollbar swiper-pagination-white"></div>
+	  	<!--前后按钮-->
+	  	<div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+	</div>
+	<script src='js/jquery-1.8.3.min.js'></script>
+	<script src="js/swiper.min.js"></script>
+	<script type="text/javascript">
+	  var mySwiper = new Swiper('.swiper-container',{
+	    loop: true,//---循环播放
+		autoplay: 1000,//---动画间隔时间
+		speed:500,//---动画运动速度
+		pagination: '.swiper-pagination',//---显示分页
+	    paginationClickable: true,//---分页可以点击触发
+	   //direction: 'vertical'//---垂直方向运动
+	    spaceBetween: 30,//---slider之间的间隔
+	    scrollbar: '.swiper-scrollbar',//---滚动条控制
+        scrollbarHide: false,//---显示滚动条
+        nextButton: '.swiper-button-next',//---前按钮
+        prevButton: '.swiper-button-prev',//---后按钮
+        //effect: 'fade'//---淡入淡出效果
+//      effect: 'cube',//---立体盒子效果
+//      cube: {//---立体盒子的辅助样式
+//          shadow: true,
+//          slideShadows: true,
+//          shadowOffset: 20,
+//          shadowScale: 0.94
+//      },
+        effect: 'coverflow',//---立体景深效果
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        },
+        mousewheelControl: true//---鼠标滚轴控制
+	  });
+	  
+	  //---鼠标滑过停止
+	  $(".swiper-container").mouseenter(function (){//滑过悬停
+		    mySwiper.stopAutoplay();//mySwiper 为上面你swiper实例化的名称
+	  }).mouseleave(function(){//离开开启
+		    mySwiper.startAutoplay();
+	  });
+	</script>
+</body>
+</html>

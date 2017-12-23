@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fullpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+ 	<link rel="stylesheet" href="css/jquery.fullPage.css" />
+    <style>
+        .section {
+        	position: relative;
+        	text-align: center; 
+        	font: 50px "Microsoft Yahei"; 
+        	color: #fff;
+        }
+        .mask{
+        	position: absolute;
+        	left:0px;
+        	top:0px;
+        	width:100%;
+        	height:100%;
+        	background: rgba(0,0,0,0.4);
+        }
+        img{
+        	width:100%;
+        	height:100%;
+        }
+        #menu{
+        	margin: 0; 
+        	padding: 0; 
+        	position: fixed; 
+        	left: 10px; 
+        	top: 10px; 
+        	list-style-type: none; 
+        	z-index: 70;
+        	}
+		#menu li { 
+			float: left; 
+			margin:  0 10px 0 0; 
+			font-size: 14px;
+			}
+		#menu a{ 
+			float: left; 
+			padding: 10px 20px;
+			 background-color: #fff; 
+			 color: #333; 
+			 text-decoration: none;
+			 }
+		#menu .active a { 
+			color: #fff; 
+			background-color: #333;
+			}
+			
+		/*改变活动导航的样式*/
+		#fp-nav ul li{
+			margin:20px;
+			padding:5px;
+		}
+		#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span {  
+		    background: #fff; /*活动导航的颜色*/
+		    height:15px;
+		    width:15px;
+		}  
+		#fp-nav ul li a span, .fp-slidesNav ul li a span {
+		    height:10px;
+		    width: 10px;
+		}
+		#fp-nav ul li .fp-tooltip {
+			font-size:18px;
+		}
+    </style>
+    <script src='js/jquery-1.8.3.min.js'></script>
+    <script src='js/jquery.fullPage.min.js'></script>
+    <script>
+       $(function(){
+            $('#fullpage').fullpage({
+               //sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'] //设置background-color属性
+                anchors: ['page1', 'page2', 'page3', 'page4'],//--定义锚链接
+				menu: '#menu',//绑定菜单
+				navigation: true,//导航圆点
+				navigationPosition:'right',/*导航小圆点位置，可以设置为left或者right*/
+				navigationTooltips:['练肌','健身','吸氧','跑步'], /*:导航小圆点的tooltips设置，默认为[],注意按照顺序设置*/
+                controlArrows:true,//--箭头来控制slide幻灯片
+                verticalCentered:true,//每一页的内容是否垂直居中
+                resize:false,//字体是否随着页面缩放而缩放，默认值为false
+                scrollingSpeed:700,  //滚动速度,默认为700  单位ms
+//              lockAnchors:false,//--- /*是否锁定锚链接，默认为false。
+                loopTop:true,//---滚动到最顶部后是否连续滚动到底部，默认为false
+                loopBottom:true,   /*滚动到底部后是否连续滚动回顶部，默认为false*/
+//              loopHorizontal:true, /*横向slider幻灯片是否循环滚动，默认为true*/
+                autoScrolling:true,//自动滚动
+                scrollBar:true,//--滚动条
+//              paddingTop:0,//设置每一个section顶部和底部的padding，默认都为0。
+//              paddingBottom:0,
+//              fixedElements:'#header',//fixedElements设置的元素固定不动
+                keyboardScrolling:true,///*是否可以使用键盘方向键导航，默认为true*/
+                touchSensitivity:5,  /*在移动设备中滑动页面的敏感性，默认为5，越大则越难滑动。*/
+                continuousVertical:true,//是否循环滚动，默认为false。
+                animateAnchor:true, /*锚链接是否可以控制滚动动画，默认为true。如果为false则没有动画效果*/
+                recordHistory:true,	//默认为true，记录页面滚动的历史，通过浏览器的前进后退控制导航。
+//            
+//             
+//              showActiveTooltip:true, /*是否显示当前页面的导航的tooltip信息，默认为false*/
+//              slidesNavigation:false,  /*是否显示横向幻灯片的导航，默认为false*/
+//              slidesNavPosition:'bottom' //横向幻灯片导航的位置，默认为bottom，
+            });
+            //---自动滚动
+            setInterval(function(){
+		        $.fn.fullpage.moveSectionDown();
+		    }, 3000);
+//		    
+//		    moveSectionUp()	向上滚动
+//			moveSectionDown()	向下滚动
+//			moveTo(section, slide)	滚动到
+//			moveSlideRight()	slide 向右滚动
+//			moveSlideLeft()	slide 向左滚动
+//			
+//			setAutoScrolling()	设置页面滚动方式，设置为 true 时自动滚动
+//			setAllowScrolling()	添加或删除鼠标滚轮/触控板控制
+//			setKeyboardScrolling()	添加或删除键盘方向键控制
+//			setScrollingSpeed()	定义以毫秒为单位的滚动速度
+		    
+		    
+    	});
+    </script>
+</head>
+<body>
+	<!--全屏导航-->
+	<ul id="menu">
+		<li data-menuanchor="page1" class="active"><a href="#page1">练肌</a></li>
+		<li data-menuanchor="page2"><a href="#page2">健身</a></li>
+		<li data-menuanchor="page3"><a href="#page3">吸氧</a></li>
+		<li data-menuanchor="page4"><a href="#page4">跑步</a></li>
+	</ul>
+    <div id="fullpage">
+		<div class="section">
+			<img src="img/1.gif" alt="" />
+			<div class='mask'>
+			</div>
+		</div>
+		<div class="section">
+			<img src="img/2.gif" alt="" />
+			<div class='mask'>
+			</div>
+		</div>
+		<div class="section">
+			<img src="img/3.gif" alt="" />
+			<div class='mask'>
+			</div>
+		</div>
+		<div class="section">
+			<img src="img/4.gif" alt="" />
+			<div class='mask'>
+			</div>
+		</div>
+	</div>
+  
+</body>
+</html>

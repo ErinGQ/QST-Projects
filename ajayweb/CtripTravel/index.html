@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>携程旅行</title>
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<!-- 头部 -->
+		<div class='banner'>
+			<!-- 轮播图 -->
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<a href="#">
+			        		<img src="images/55.jpg" alt="" />
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="#">
+			        		<img src="images/11.jpg" alt="" />
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="#">
+			        		<img src="images/22.jpg" alt="" />
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="#">
+			        		<img src="images/33.jpg" alt="" />
+			        	</a>
+			        </div>
+			        <div class="swiper-slide">
+			        	<a href="#">
+			        		<img src="images/44.jpg" alt="" />
+			        	</a>
+			        </div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    
+			    <!-- 如果需要导航按钮 -->
+			    <div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>
+			    
+			    <!-- 如果需要滚动条 -->
+			    <div class="swiper-scrollbar"></div>
+			</div>
+		</div>
+		<!-- 主体 -->
+		<div class="main">
+			<!-- 导航菜单 -->
+			<section class="nav">
+				
+				<div class="item">
+					<div class="pub">
+						<a href="#">
+							<img src="images/pb1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="sub">
+						<a href="#">海外酒店</a>
+						<a href="#">团购</a>
+						<a href="#">特惠酒店</a>
+						<a href="#">客栈公寓</a>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="pub">
+						<a href="#">
+							<img src="images/pb2.jpg" alt="" />
+						</a>
+					</div>
+					<div class="sub">
+						<a href="#">火车票</a>
+						<a href="#">汽车票船票</a>
+						<a href="#">国际机票</a>
+						<a href="#">自驾专车</a>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="pub">
+						<a href="#">
+							<img src="images/pb3.jpg" alt="" />
+						</a>
+					</div>
+					<div class="sub">
+						<a href="#">攻略身边</a>
+						<a href="#">邮轮</a>
+						<a href="#">周末游</a>
+						<a href="#">保险签证</a>
+					</div>
+				</div>
+				
+				<div class="item">
+					<div class="sub">
+						<a href="#">门票玩乐</a>
+						<a href="#">美食</a>
+						<a href="#">全球购</a>
+						<a href="#">礼品卡</a>
+						<a href="#">出境WIFI</a>
+						<a href="#">更多</a>
+					</div>
+				</div>
+				
+			</section>
+			<!-- 其它部分 -->
+			<section class="extra">
+				<a href="#">
+					<img src="./images/extra_1.png">
+				</a>
+				<a href="#">
+					<img src="./images/extra_2.png">
+				</a>
+			</section>	
+			
+		</div>
+		<!-- 底部 -->
+		<footer>
+			<!-- 底部导航 -->
+			<nav>
+				<a href="#">电话预订</a>
+				<a href="#">下载客户端</a>
+				<a href="#">我的</a>
+			</nav>
+			<!-- 版本信息 -->
+			<div class="copyright">
+				<!-- 网站链接 -->
+				<p class="link">
+					<a href="#">网站地图</a> |
+					<a href="#">ENGLISH</a> |
+					<a href="#">电脑版</a>
+				</p>
+				<p>&copy;2015 携程旅行</p>
+			</div>
+		</footer>
+	</div>
+	<script src='js/swiper.min.js'></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			loop:true,
+		    spaceBetween: 30,
+		    centeredSlides: true,
+		    autoplay: {
+		        delay: 2500,
+		        disableOnInteraction: false,
+		    },
+		    pagination: {
+		        el: '.swiper-pagination',
+		        clickable: true,
+		    },
+		    navigation: {
+		        nextEl: '.swiper-button-next',
+		        prevEl: '.swiper-button-prev',
+		    },
+   		 });
+	</script>
+</body>
+</html>
