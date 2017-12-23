@@ -1,0 +1,164 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+}
+body{
+	background: #ffd8d9;
+}
+/*清除浮动*/
+.clearfix:after{
+	display:block;
+	content:"";
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix{
+	zoom:1;
+}
+
+.wrap{
+	width:700px;
+	background-color:#FFF;
+	margin: 0 auto;
+}
+.top{
+	background-color:#FFF;
+}
+.link ul{
+	list-style:none;
+    font-size:14px;
+    font-color: #630002;
+    margin:0px;
+    padding:0px;
+}
+.link ul li{
+	float:left;
+	text-align:center;
+	width:100px;
+	/*font-color:#630002;*/
+}
+.link ul li a{
+	display: block;
+	 background:url("images/button1.jpg");
+}
+.con{
+	clear:both;
+}
+/*左边*/
+.left{
+	width:180px;
+	background-color:#FFF;
+	float:left;
+	height:100%;
+}
+.login{
+	background-color:#FFF;
+	background-repeat:no-repeat;
+	padding-left:25px;
+	padding-top:55px;
+	font-size:14px;
+	line-height:23px;
+	background-image:url("images/login.jpg");
+}
+.type{
+	background-repeat:no-repeat;
+	background-color:#FFF;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:50px;
+	background-image:url("images/category.jpg");
+}
+.type h5{
+	background-color:#FFD1D1;
+	line-height:20px;
+	width: 148px;
+	padding-left:5px;
+}
+.type ul{
+	list-style-type:none;
+	margin-top:5px;
+	padding-left:25px;
+	padding:5px;
+	font-size:12px;
+}
+.type ul li{
+	background: url("images/icon1.gif") no-repeat ;
+	border-bottom:1px dashed #CCC;
+	padding-left:25px;
+	margin-right:10px;
+	line-height:18px;
+
+}
+/*右边*/
+.right{
+	 	float:left;  
+        width:520px;
+        height:100%;            
+    }   
+    .right .news{
+        background-image:url("images/latest.jpg");
+        background-repeat:no-repeat;
+        margin-left:2px;
+        padding-top:34px;
+        background-color:#fff;
+        text-align:center;
+        height:110px;
+    }
+    .right .news img{
+    	float:left;
+        margin:0px;
+        border:none;        
+    }
+    .right .recommend,.right .new{
+        margin-left:2px;
+        padding-top:34px;
+        background-color:#fff;
+        margin-top:2px;
+        font-size:14px;
+}
+    .right .recommend{
+        height:300px;
+        background-image:url("images/recommend.jpg");
+        background-repeat:no-repeat;
+}
+     .right .new{
+        height:140px;
+        background-image:url("images/new.jpg");
+        background-repeat:no-repeat;
+}
+ 
+    .right .recommend ul,.right .new ul{
+        margin:0px;
+        padding:0px;
+        text-align:center;
+}
+    .right .recommend ul li,.right .new ul li{
+        float:left;
+        width:125px;
+        text-align:center;
+}
+  
+.help{
+        background:url("images/tips.jpg") no-repeat;
+        margin:2px 0px 0px 2px;
+        padding:35px 0px 0px 0px;
+        height:85px;
+        background-color:#fff;
+        font-size:12px;
+}
+.help ul{
+        list-style:none;
+        margin:0px;
+        padding:5px 5px 5px 30px;
+}
+.help ul li{
+        background:url("images/icon2.gif") no-repeat 5px 6px;
+        padding:1px 0px 1px 12px;
+        float:left;
+        width:220px;
+        line-height:18px;
+}
